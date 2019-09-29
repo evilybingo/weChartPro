@@ -1,0 +1,114 @@
+@import "@styles/theme.scss";
+.modal-title {
+  color: $text-color;
+  font-size: 34px;
+  padding-top: 40px;
+  line-height: 100px;
+  text-align: center;
+  font-weight:bold;
+}
+.modal-content {
+  text-align: center;
+  font-size: 28px;
+  padding-bottom: 60px;
+  color: $text-color-light;
+}
+.know-btn {
+  height: 100px;
+  color: $primary-color;
+  font-size: 34px;
+  background: #fff;
+  border-top: 1px solid $border-color-grey;
+  border-radius: 0;
+  box-sizing: inherit;
+}
+.create-driver {
+  border: 1px solid $border-color-grey;
+  background: #fff;
+  margin: 20px 30px;
+  border-radius: 8px;
+  .input-box {
+    position: relative;
+    padding: 0 20px;
+    display: flex;
+    height: 106px;
+    line-height: 106px;
+    font-size: 32px;
+    border-bottom: 1px solid $border-color-grey;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+    .gray {
+      color: $text-color-placeholder;
+    }
+    .tit {
+      padding-right: 20px;
+      color: $text-color;
+    }
+    .input-item {
+      flex: 1;
+      text-align: right;
+      height: 106px;
+    }
+  }
+  .driver-box {
+    position: absolute;
+    z-index: 9;
+    right: -1px;
+    top: 105px;
+
+    border: 1px solid $border-color-grey;
+    box-shadow: 0px 0px 12px $border-color-grey;
+    background: #fff;
+
+    .arrow-top {
+      width: 35px;
+      height: 19px;
+      top: -18px;
+      right: 25px;
+      position: absolute;
+      z-index: 10;
+    }
+  }
+  .driver-list {
+    max-height: 518px;
+    overflow: hidden;
+    &.blue {
+      background: $primary-color;
+    }
+    .item {
+      padding: 0 40px;
+      line-height: 104px;
+      height: 104px;
+      color: $text-color;
+      font-size: 32px;
+      border-bottom: 1px solid $border-color-grey;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+}
+.btn-list {
+  position: absolute;
+  left: 30px;
+  bottom: 40px;
+  display: flex;
+  .add-btn {
+    color: #fff;
+    background: $primary-color;
+  }
+  .cancel-btn {
+    color: $primary-color;
+
+    border: 1px solid $primary-color;
+  }
+  .add-btn,
+  .cancel-btn {
+    width: 332px;
+    margin-right: 30px;
+    text-align: center;
+    font-size: 34px;
+  }
+}

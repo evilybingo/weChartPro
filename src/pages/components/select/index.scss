@@ -1,0 +1,75 @@
+@import "@styles/theme.scss";
+.com-select{
+	color: $white;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	height: 86px;
+	line-height: 86px;
+
+	&__pane{
+		flex: 1;
+		position: relative;
+	
+		&-title{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@include font($size-h5, $white, 500);
+
+			.icon-wrap{
+				position: relative;
+				.icon{
+					@include wh(26px,16px);
+					position: absolute;
+					top: -5px;
+					left: 10px;
+				}
+			}
+
+			.active-item{
+				@include font($size-h5, $primary-color, 500);
+			}
+			
+		}
+	}
+
+	&__pane-mask{
+		position: fixed;
+		top: 180px;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0,0,0,0.4);
+		z-index: 80;
+	}
+
+	&__pane-ul{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 100%;
+		height: 0;
+		overflow: hidden;
+		transition: all 0.3s ease;
+		z-index: 90;
+		&.pane-show{
+			height: 300px;
+		}
+
+		&-li{
+			display: flex;
+			background-color: $white;
+			line-height: 100px;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0 30px;
+			border-bottom: 1px solid $border-color-grey;
+			@include font($size-h5, $text-color);
+
+			.icon{
+				@include wh(46px,46px);
+			}
+		}
+	}
+}

@@ -1,0 +1,127 @@
+@import "@styles/theme.scss";
+.gray {
+  color: $text-color-placeholder;
+}
+
+.com-modal {
+  &__gary {
+    color: $text-color-placeholder;
+  }
+  &__mask {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+  }
+  &__loading {
+    height: 490px;
+    text-align: center;
+    image {
+      display: inline-block;
+    }
+  }
+  &__loading,
+  &__box {
+    position: fixed;
+    top: 25%;
+    width: 600px;
+    z-index: 1001;
+    left: 75px;
+    background-color: $white;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  &__box {
+    &-title {
+      line-height: 100px;
+      text-align: center;
+      @include font($size-h3, $text-color, 600);
+      @include one-border(bottom,$border-color-grey);
+    }
+
+    &-body {
+      text-align: center;
+      padding: 30px 0 50px;
+
+      &__desc {
+        @include font($size-h5, $text-color);
+        margin-bottom: 15px;
+      }
+
+      &__text {
+        @include font($size-h2, $color-orange,600);
+        font-weight: 600;
+        margin-bottom: 20px;
+
+        .unit {
+          @include font($size-h5, $color-orange);
+        }
+      }
+
+      &__input {
+        border: 1px solid $border-color-grey;
+        height: 80px;
+        line-height: 80px;
+        text-align: left;
+        margin: 0 50px;
+        border-radius: 10px;
+        padding: 0 15px;
+        @include font($size-h4, $text-color);
+
+        &.with-error {
+          border: 1px solid $color-red;
+        }
+      }
+      &__input-error {
+        text-align: right;
+        margin-right: 50px;
+        @include font($size-h5, $color-red);
+      }
+      &__area {
+        display: block;
+        margin: 30px 50px 0;
+        text-align: left;
+        position: relative;
+        .area-box {
+          display:block;
+          padding:20px;
+          width:auto;
+          border-radius:10px;
+          border: 1px solid $border-color-grey;
+          height: 140px;
+          font-size: 16PX;
+          color: $text-color;
+        }
+        .count-box{
+          position: absolute;
+          right: 20px;
+          bottom: 20px;
+          color: $text-color-placeholder;
+          font-size: 24px;
+        }
+      }
+    }
+
+    &-footer {
+      text-align: center;
+      @include flex(center,center);
+      @include one-border(top,$border-color-grey);
+
+      &__btn {
+        width: 50%;
+        border-radius: 0;
+        background-color: $white;
+        line-height: 100px;
+        @include font($size-h3, $text-color-light);
+
+        &.primary-button {
+          @include button-color($primary-color);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,92 @@
+@import "@styles/theme.scss";
+//开卡结果
+.card-result {
+  .driver-list {
+    .list {
+      line-height: 44px;
+      color: $text-color-lighter;
+      font-size: 28px;
+      text-align: right;
+    }
+  }
+  .btn-box {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    bottom: 0;
+    padding: 30px 15px 20px;
+    display: flex;
+    .btn {
+      width: 50%;
+      text-align: center;
+      border: 1px solid $primary-color;
+      color: $primary-color;
+      background: #fff;
+      height: 98px;
+      line-height: 98px;
+      border-radius: 4px;
+      font-size: 34px;
+      margin: 0 15px;
+      flex: 1;
+    }
+  }
+  .result-list {
+    padding: 20px 30px 20px 20px;
+    &.pb-160{
+      padding-bottom: 160
+    }
+    .item {
+      line-height: 60px;
+      display: flex;
+      font-size: 30px;
+
+      .tit {
+        color: $text-color-lighter;
+      }
+      .txt {
+        flex: 1;
+        text-align: right;
+        color: $text-color;
+        &.orange {
+          color: $orange-color;
+        }
+      }
+    }
+  }
+  .result-list-box {
+    border-top: 1px solid $border-color-grey;
+    border-bottom: 1px solid $border-color-grey;
+    margin-bottom: 20px;
+    background: #fff;
+    &.mb160{
+      margin-bottom: 160px;
+    }
+    .title {
+      border-bottom: 1px solid $border-color-grey;
+      color: $bg-black;
+      font-size: 32px;
+      height: 110px;
+      padding: 0 30px;
+      line-height: 110px;
+    }
+  }
+  .result-top {
+    background: $bg-black;
+    height: 200px;
+    line-height: 200px;
+    padding: 0 80px;
+    position: relative;
+    .tit {
+      font-size: 36px;
+      color: #fff;
+    }
+    .card-icon {
+      position: absolute;
+      right: 80px;
+      top: 50%;
+      margin-top: -54px;
+      width: 134px;
+      height: 108px;
+    }
+  }
+}

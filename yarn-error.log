@@ -1,0 +1,99 @@
+Arguments: 
+  /Users/mark/.nvm/versions/node/v10.15.1/bin/node /Users/mark/.nvm/versions/node/v10.15.1/bin/yarn add taro-ui/dist/style/components/tabs.scss --silent --no-progress
+
+PATH: 
+  /Users/mark/.nvm/versions/node/v10.15.1/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/mark/work/51zhaoyou/BMS/node_modules/.bin:/Users/mark/.nvm/versions/node/v10.15.1/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/Users/mark/work/51zhaoyou/BMS/node_modules/.bin:/Users/mark/.nvm/versions/node/v10.15.1/bin:/Users/mark/bin:/usr/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/mark/.nvm/versions/node/v10.15.1/bin:/Users/mark/bin
+
+Yarn version: 
+  1.15.2
+
+Node version: 
+  10.15.1
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://r.cnpmjs.org/taro-ui%2fdist/style/components/tabs.scss: [not_found] document not found
+      at Request.params.callback [as _callback] (/Users/mark/.nvm/versions/node/v10.15.1/lib/node_modules/yarn/lib/cli.js:66058:18)
+      at Request.self.callback (/Users/mark/.nvm/versions/node/v10.15.1/lib/node_modules/yarn/lib/cli.js:129541:22)
+      at Request.emit (events.js:189:13)
+      at Request.<anonymous> (/Users/mark/.nvm/versions/node/v10.15.1/lib/node_modules/yarn/lib/cli.js:130513:10)
+      at Request.emit (events.js:189:13)
+      at Gunzip.<anonymous> (/Users/mark/.nvm/versions/node/v10.15.1/lib/node_modules/yarn/lib/cli.js:130435:12)
+      at Object.onceWrapper (events.js:277:13)
+      at Gunzip.emit (events.js:194:15)
+      at endReadableNT (_stream_readable.js:1103:12)
+      at process._tickCallback (internal/process/next_tick.js:63:19)
+
+npm manifest: 
+  {
+    "name": "bms-wechat",
+    "version": "1.0.0",
+    "private": true,
+    "description": "企业管理后台系统",
+    "scripts": {
+      "build:weapp": "taro build --type weapp",
+      "dev:weapp": "npm run build:weapp -- --watch",
+      "test:weapp": "NODE_ENV=test npm run build:weapp -- --watch",
+      "pre:weapp": "NODE_ENV=pre npm run build:weapp -- --watch",
+      "build:swan": "taro build --type swan",
+      "build:alipay": "taro build --type alipay",
+      "build:tt": "taro build --type tt",
+      "build:h5": "taro build --type h5",
+      "build:rn": "taro build --type rn",
+      "dev:swan": "npm run build:swan -- --watch",
+      "dev:alipay": "npm run build:alipay -- --watch",
+      "dev:tt": "npm run build:tt -- --watch",
+      "dev:h5": "npm run build:h5 -- --watch",
+      "dev:rn": "npm run build:rn -- --watch"
+    },
+    "author": "",
+    "license": "MIT",
+    "dependencies": {
+      "@tarojs/async-await": "1.2.17",
+      "@tarojs/components": "1.2.17",
+      "@tarojs/redux": "1.2.17",
+      "@tarojs/redux-h5": "1.2.17",
+      "@tarojs/router": "1.2.17",
+      "@tarojs/taro": "1.2.17",
+      "@tarojs/taro-alipay": "1.2.17",
+      "@tarojs/taro-h5": "1.2.17",
+      "@tarojs/taro-swan": "1.2.17",
+      "@tarojs/taro-tt": "1.2.17",
+      "@tarojs/taro-weapp": "1.2.17",
+      "lodash": "^4.17.11",
+      "nerv-devtools": "^1.3.9",
+      "nervjs": "^1.3.9",
+      "react": "^16.8.6",
+      "redux": "^4.0.0",
+      "redux-logger": "^3.0.6",
+      "redux-thunk": "^2.3.0"
+    },
+    "devDependencies": {
+      "@types/react": "^16.4.8",
+      "@types/webpack-env": "^1.13.6",
+      "@tarojs/plugin-babel": "1.2.17",
+      "@tarojs/plugin-csso": "1.2.17",
+      "@tarojs/plugin-sass": "1.2.17",
+      "@tarojs/plugin-uglifyjs": "1.2.17",
+      "@tarojs/webpack-runner": "1.2.17",
+      "babel-plugin-transform-class-properties": "^6.24.1",
+      "babel-plugin-transform-decorators-legacy": "^1.3.4",
+      "babel-plugin-transform-jsx-stylesheet": "^0.6.5",
+      "babel-plugin-transform-object-rest-spread": "^6.26.0",
+      "babel-preset-env": "^1.6.1",
+      "babel-eslint": "^8.2.3",
+      "eslint": "^4.19.1",
+      "eslint-config-taro": "1.2.17",
+      "eslint-plugin-react": "^7.8.2",
+      "eslint-plugin-import": "^2.12.0",
+      "eslint-plugin-taro": "1.2.17"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

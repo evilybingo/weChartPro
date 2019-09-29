@@ -1,0 +1,28 @@
+@import "./mixins.scss";
+// rgb(0, 21, 42) 16 进制为 #00152A
+/*  颜色 */
+$primary-color: rgb(58, 145, 247);
+$text-color: rgba(0, 21, 42, 0.8);
+$text-color-light: rgba(0, 21, 42, 0.6);
+$text-color-lighter: rgba(0, 21, 42, 0.4);
+$text-color-placeholder: rgba(0, 21, 42, 0.2);
+$color-orange: #FF7517;
+$orange-color: #FF7517;
+$white: rgb(255, 255, 255);
+$color-red: #FF6C4D;
+$text-color-bule: #1890FF;
+
+$bg-black: #00152A;
+$bg-grey: rgb(242,242,242);
+
+
+$border-color-grey: #E9E9E9;
+$border-color-blue: #1890FF;
+
+// 字体大小
+$size-h1: 30PX;
+$size-h2: 20PX;
+$size-h3: 18PX;
+$size-h4: 16PX;
+$size-h5: 14PX;
+$size-h6: 12PX;

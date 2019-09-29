@@ -1,0 +1,49 @@
+@import "@styles/theme.scss";
+.dot .dot-item:nth-child(1) {
+  left: -80px;
+  animation-delay: -0.2s;
+}
+.dot .dot-item:nth-child(3) {
+  right: -80px;
+  animation-delay: 0.2s;
+}
+
+@keyframes dot {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+.box {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  width: 396px;
+  height: 396px;
+  margin: 100px auto;
+}
+.dot-item {
+  position: relative;
+}
+.dot {
+  .dot-item {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    border-radius: 40px;
+    background: $primary-color;
+    transform: scale(0);
+    animation: dot 1s linear infinite;
+  }
+}
+

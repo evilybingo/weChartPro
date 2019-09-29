@@ -1,0 +1,50 @@
+/**
+ * 单行文本省略 RN 除外
+ */
+@mixin text-ellipsis() {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+/**
+ * 多行文本省略   RN 除外
+ */
+@mixin lamp-clamp($line) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: $line;
+  -webkit-box-orient: vertical;
+}
+
+
+@mixin one-border($dir, $color, $type: solid) {
+  #{border-#{$dir}}: 1px $type $color;
+}
+
+@mixin flex($horizontal,$vertical) {
+  display: flex;
+  justify-content: $horizontal;
+  align-items: $vertical;
+}
+
+// 宽高
+@mixin wh($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+// 字体大小，颜色
+@mixin font($size, $color: inherit, $weight: 400) {
+  font-size: $size;
+  color: $color;
+  font-weight: $weight
+}
+
+@mixin button-color($bg,$bd: transparent,$br: 4px,$color: #fff){
+  background-color: $bg;
+  color: $color;
+  border-radius: $br;
+  border: 1px solid $bd;
+}

@@ -1,0 +1,70 @@
+// taro-ui 坑=> 按需引入 components, 在 components内引入样式无效, 可以在这里引入项目所用的所有组件样式
+@import "@styles/theme.scss";
+// fixed 布局 IOS 下拉刷新正常，安卓下拉刷新会整体下拉
+.oil-card-list {
+  height: auto;
+  min-height: 100%;
+  background-color: $bg-grey;
+  padding-top: 190px;
+
+  &__search {
+    color: $white;
+    background-color: $bg-black;
+    padding: 20px 30px 10px;
+    z-index: 20;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &__tabs {
+    background-color: $bg-black;
+    position: fixed;
+    padding: 0 30px;
+    left: 0;
+    right: 0;
+    top: 95px; // 实际 98px  但是真机会有间隙
+    z-index: 20;
+  }
+
+  &__scroll-view {
+    flex: 1;
+    z-index: 1;
+  }
+}
+// 覆盖 taroUI 样式
+.at-tabs {
+  // hack tabs 顶部 1px 边框
+  &__header {
+    position: relative;
+    padding-top: 16px;
+    background-color: $bg-black;
+    z-index: 1;
+  }
+  // at-tabs__item at-tabs__item--active
+  &__item {
+    padding: 0;
+    line-height: 80px;
+    @include font($size-h5, $white, 500);
+
+    &--active {
+      @include font($size-h4, $text-color-bule, 600);
+    }
+    &-underline {
+      height: 6px;
+      width: 195px;
+      left: 90px;
+      background-color: $text-color-bule;
+    }
+  }
+}
+
+.at-tabs-pane {
+  display: block;
+  height: 100%;
+
+  &.at-tabs-pane--inactive {
+    display: none;
+  }
+}

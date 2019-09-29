@@ -1,0 +1,24 @@
+@import "@styles/theme.scss";
+.no-card{
+	height: 100%;
+	padding: 50px 0 80px;
+	text-align: center;
+	@include flex(center, center);
+	flex-direction: column;
+
+	&__image{
+		margin-bottom: 50px;
+		@include wh(242px, 162px);
+	}
+
+	&__text{
+		line-height: 60px;
+		@include font($size-h4, $text-color);
+	}
+
+	&__btn{
+		margin-top: 100px;
+		width: 500px;
+		@include button-color($primary-color);
+	}
+}

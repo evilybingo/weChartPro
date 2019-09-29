@@ -1,0 +1,442 @@
+@import "@styles/theme.scss";
+
+.card-info {
+  padding: 30px 30px 100px 30px;
+  background: $bg-black;
+  .info-box {
+    width: 690px;
+    height: 230px;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+    .card-bg {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 230px;
+      display: block;
+      top: 0;
+      z-index: 1;
+    }
+    .card-num {
+      z-index: 2;
+      position: absolute;
+      left: 30px;
+      opacity: 0.9;
+      bottom: 24px;
+      font-size: 28px;
+    }
+  }
+  .title {
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+    padding: 30px;
+    .company {
+      line-height: 48px;
+      font-size: 28px;
+    }
+  }
+  .name {
+    position: relative;
+  }
+  .balance {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 40rpx;
+    height: 40rpx;
+
+    .tit {
+      opacity: 0.8;
+      font-size: 28px;
+    }
+  }
+}
+.driver-wrapper {
+  margin: 20px 42px;
+  .add-btn {
+    text-align: center;
+    font-size: 28px;
+    color: $primary-color;
+    border: 1px dashed $primary-color;
+    line-height: 80px;
+    height: 80px;
+    border-radius: 4px;
+
+    .tit {
+      padding-left: 10px;
+    }
+    .icon {
+      display: inline-block;
+      width: 26px;
+      height: 28px;
+      vertical-align: middle;
+    }
+  }
+  .driver-list {
+    margin-top: 20px;
+    .item {
+      margin-bottom: 10px;
+      background: #fff;
+      border-radius: 4px;
+      padding: 36px 20px;
+      position: relative;
+      .unbind {
+        position: absolute;
+        font-size: 28px;
+        color: #000;
+        color: $primary-color;
+        right: 20px;
+        line-height: 36px;
+        top: 50%;
+        margin-top: -18px;
+      }
+      .name {
+        display: flex;
+        color: #344555;
+        line-height: 36px;
+        .txt {
+          padding-left: 10px;
+          font-size: 30px;
+          padding-right: 80px;
+          flex: 1;
+        }
+        .icon {
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
+  }
+}
+
+.at-modal__header {
+  padding: 30px 0;
+  color: $text-color;
+  position: relative;
+}
+.create-driver {
+  button {
+    &.sure-btn {
+      color: #fff;
+      background: $primary-color;
+      &:last-child {
+        color: #fff;
+        background: $primary-color;
+      }
+    }
+
+    &.cancel-btn {
+      color: $text-color-light;
+    }
+  }
+
+  .driver-item {
+    margin-bottom: 20px;
+    .gray {
+      color: $text-color-placeholder;
+    }
+    .input-box {
+      position: relative;
+      z-index: 5;
+      border-radius: 8px;
+      width: 100%;
+      height: 78px;
+      padding: 0 10px;
+      border: 1px solid $text-color-lighter;
+    }
+    .title {
+      font-size: 32px;
+      line-height: 64px;
+
+      color: $text-color;
+      .not-null {
+        color: $color-red;
+      }
+    }
+  }
+  .close-icon {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+// 开卡
+.gary {
+  color: $text-color-placeholder;
+}
+.card-driver.driver-wrapper {
+  margin: 0 0 20px 0;
+  background: #fff;
+  border: 1px solid $border-color-grey;
+  border-radius: 8px;
+  .add-btn {
+    margin: 0 20px;
+  }
+  .driver-item {
+    border-bottom: 1px solid $border-color-grey;
+    padding: 0 20px;
+    height: 114px;
+    line-height: 114px;
+    display: flex;
+    .tit {
+      color: $text-color;
+      width: 200px;
+      font-size: 34px;
+    }
+    .add-driver {
+      flex: 1;
+      text-align: right;
+      line-height: 114px;
+      .icon {
+        width: 28px;
+        height: 32px;
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .txt {
+        color: $primary-color;
+        font-size: 32px;
+        padding-left: 10px;
+      }
+    }
+  }
+}
+.picker-box {
+  flex: 1;
+  text-align: right;
+  padding-right: 30px;
+  position: relative;
+  color: $text-color-light;
+  &.limit-width {
+    width: 300px;
+  }
+  &.gary {
+    color: $text-color-placeholder;
+  }
+  .picker {
+    font-size: 32px;
+  }
+  .picker-icon {
+    width: 18px;
+    height: 12px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -6px;
+  }
+}
+.open-card {
+  margin: 30px;
+  padding-bottom: 178px;
+
+  .form-item {
+    position: relative;
+    margin-bottom: 20px;
+    background: #fff;
+    height: 114px;
+    line-height: 114px;
+    color: $text-color;
+    padding: 0 20px;
+    border: 1px solid $border-color-grey;
+    border-radius: 8px;
+    display: flex;
+    .input-box {
+      position: relative;
+      z-index: 5;
+      height: 114px;
+      flex: 1;
+      text-align: right;
+      font-size: 32px;
+    }
+    .tit {
+      width: 200px;
+      font-size: 34px;
+    }
+  }
+}
+.open-btn-box {
+  position: fixed;
+  z-index: 9;
+  left: 0;
+  bottom: 0;
+  height: 158px;
+  width: 100%;
+  padding: 30px 0;
+  background: #fff;
+  .open-btn {
+    margin: 0 30px;
+    height: 98px;
+    line-height: 98px;
+    border-radius: 8px;
+    background: $primary-color;
+    color: #fff;
+  }
+}
+
+// 开卡 共享设置
+
+.tip-limit {
+  color: $color-red;
+  font-size: 24px;
+  line-height: 54px;
+}
+.share-set {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid $border-color-grey;
+
+  .set-label {
+    width: 200rpx;
+    font-size: 34rpx;
+    &.flex-box {
+      flex: 1;
+    }
+  }
+  .limit-txt {
+    width: 64px;
+    text-align: center;
+    color: $text-color-lighter;
+    font-size: 34px;
+  }
+  .limit-amount {
+    height: 114px;
+    text-align: right;
+    flex: 1;
+  }
+  .title {
+    padding: 0 20px;
+    font-size: 34px;
+    color: $text-color;
+    height: 114px;
+    line-height: 114px;
+    border-bottom: 1px solid $border-color-grey;
+  }
+  .set-item {
+    display: flex;
+    color: $text-color;
+    font-size: 30px;
+    line-height: 114px;
+    border-bottom: 1px solid $border-color-grey;
+    margin: 0 20px;
+    &.share-set-item {
+      padding: 30px 0;
+      line-height: 54px;
+    }
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .limit-box {
+    width: 240px;
+    height: 70px;
+    border: 1px solid $border-color-grey;
+    display: flex;
+    line-height: 68px;
+    text-align: center;
+    border-radius: 4px;
+    margin-top: 24px;
+    .limit-item {
+      width: 50%;
+      font-size: 32px;
+      color: $text-color-lighter;
+      &.blue {
+        margin-top: -1px;
+        border-radius: 0 4px 4px 0;
+        border: 1px solid $primary-color;
+        color: #fff;
+        background: $primary-color;
+      }
+    }
+  }
+}
+.select-list {
+  .select-mask {
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+  .driver-list {
+    max-height: 518px;
+    overflow: hidden;
+    &.blue {
+      background: $primary-color;
+    }
+    .item {
+      padding: 0 40px;
+      line-height: 104px;
+      height: 104px;
+      color: $text-color;
+      font-size: 32px;
+      border-bottom: 1px solid $border-color-grey;
+      &:last-child {
+        border-bottom: 0;
+      }
+    }
+  }
+  .driver-box {
+    position: absolute;
+    z-index: 9;
+    right: -1px;
+    top: 105px;
+
+    border: 1px solid $border-color-grey;
+    box-shadow: 0px 0px 12px $border-color-grey;
+    background: #fff;
+
+    .arrow-top {
+      width: 35px;
+      height: 19px;
+      top: -18px;
+      right: 25px;
+      position: absolute;
+      z-index: 10;
+    }
+  }
+}
+.unit-money {
+  padding-left: 15px;
+  color: $text-color-light;
+}
+.remark-box {
+  background: #fff;
+  margin-top: -28px;
+  border: 1rpx solid $border-color-grey;
+  color: $text-color;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 0 20px;
+  position: relative;
+
+  .clear-icon {
+    width: 28px;
+    height: 28px;
+    margin-top: 28px;
+    display: inline-block;
+  }
+  .clear-box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 68px;
+    text-align: center;
+    height: 84px;
+    z-index: 3;
+  }
+  .remark-input {
+    font-size: 32px;
+    height: 84px;
+    position: relative;
+    z-index: 2;
+    padding-right: 68px;
+  }
+}

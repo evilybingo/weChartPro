@@ -1,0 +1,246 @@
+@import "@styles/theme.scss";
+
+.at-float-layout__container {
+  max-height: 320px;
+  min-height: 320px;
+  .layout-body {
+    padding: 0;
+  }
+}
+
+.float-title {
+  text-align: center;
+  font-size: 34px;
+  line-height: 120px;
+  color: $bg-black;
+  border-bottom: 1px solid $border-color-grey;
+}
+.confirm-btn {
+  color: $text-color-lighter;
+  height: 100px;
+  line-height: 100px;
+  background: none;
+  &.border {
+    color: $primary-color;
+    border-bottom: 1px solid $border-color-grey;
+  }
+}
+.card-info {
+  padding: 30px 30px 100px 30px;
+  background: $bg-black;
+  .info-box {
+    width: 690px;
+    height: 230px;
+    margin: 0 auto;
+    color: #fff;
+    position: relative;
+    .card-bg {
+      position: absolute;
+      left: 0;
+      width: 100%;
+      height: 230px;
+      display: block;
+      top: 0;
+      z-index: 1;
+    }
+    .card-num {
+      z-index: 2;
+      position: absolute;
+      left: 30px;
+      opacity: 0.9;
+      bottom: 24px;
+      font-size: 28px;
+    }
+  }
+  .title {
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+    padding: 30px;
+    .company {
+      line-height: 48px;
+      font-size: 28px;
+    }
+  }
+  .name {
+    position: relative;
+  }
+  .balance {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 40rpx;
+    height: 40rpx;
+
+    .tit {
+      opacity: 0.8;
+      font-size: 28px;
+    }
+  }
+}
+.driver-wrapper {
+  margin: 20px 42px;
+  .add-btn {
+    text-align: center;
+    font-size: 28px;
+    color: $primary-color;
+    border: 1px dashed $primary-color;
+    line-height: 80px;
+    height: 80px;
+    border-radius: 4px;
+
+    .tit {
+      padding-left: 10px;
+    }
+    .icon {
+      display: inline-block;
+      width: 26px;
+      height: 28px;
+      vertical-align: middle;
+    }
+  }
+  .driver-list {
+    margin-top: 20px;
+    .item {
+      margin-bottom: 10px;
+      background: #fff;
+      border-radius: 4px;
+      padding: 36px 20px;
+      position: relative;
+      .unbind {
+        position: absolute;
+        font-size: 28px;
+        color: #000;
+        color: $primary-color;
+        right: 20px;
+        line-height: 36px;
+        top: 50%;
+        margin-top: -18px;
+      }
+      .name {
+        display: flex;
+        color: #344555;
+        line-height: 36px;
+        .txt {
+          padding-left: 10px;
+          font-size: 30px;
+          padding-right: 80px;
+          flex: 1;
+        }
+        .icon {
+          width: 36px;
+          height: 36px;
+        }
+      }
+    }
+  }
+}
+
+.card-detail {
+  .tab-box {
+    padding-bottom: 160px;
+    margin-top: -86px;
+    .at-tabs__header {
+      background: none;
+    }
+    .at-tabs__item {
+      padding: 0;
+      height: 86px;
+      line-height: 86px;
+      color: #fff;
+      font-size: 24px;
+    }
+    .at-tabs__item--active {
+      color: $primary-color;
+      font-size: 32px;
+      .at-tabs__item-underline {
+        height: 6px;
+        background: $primary-color;
+      }
+    }
+  }
+  .gray {
+    color: $text-color-placeholder;
+  }
+}
+.footer-wrapper {
+  background: #fff;
+  position: fixed;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 30px 0;
+  .cancel-oil-freeze,
+  .oil-freeze-btn {
+    color: $primary-color;
+    background: none;
+    border: 1px solid $primary-color;
+    height: 98px;
+    line-height: 98px;
+    margin-right: 20px;
+    &.widthMax {
+      margin-right: 0;
+    }
+  }
+
+  .cancel-oil-freeze {
+    width: 100%;
+  }
+  .oil-recharge-btn {
+    height: 98px;
+    line-height: 98px;
+    background: $primary-color;
+    color: #fff;
+  }
+}
+.detail-footer {
+  margin: 0 42px;
+
+  .at-button {
+    margin-left: 0;
+    margin-right: 24px;
+    width: 200px;
+    border: 1PX solid $border-color-blue;
+    &.at-button--primary {
+      margin: 0;
+      width: 100%;
+    }
+  }
+}
+.at-modal__header {
+  padding: 30px 0;
+  color: $text-color;
+  position: relative;
+}
+.share-limit {
+  margin: 20px 42px;
+  .item {
+    padding: 0 25px;
+    line-height: 116px;
+    height: 116px;
+    background: #fff;
+    font-size: 32px;
+    color: $text-color;
+    background: #fff;
+    position: relative;
+    .sum-way {
+      position: absolute;
+      right: 25px;
+      top: 0;
+      line-height: 116px;
+    }
+  }
+  .tips {
+    font-size: 28px;
+    line-height: 74px;
+    color: $color-red;
+  }
+}
+.confirm-box {
+  position: relative;
+  z-index: 99999;
+  background: #000;
+}
+
+

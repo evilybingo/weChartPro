@@ -1,0 +1,104 @@
+@import "@styles/theme.scss";
+.oil-card-list {
+  padding: 10px 30px;
+  .employ-txt{
+    padding-right: 5px;
+  }
+  &__load-more {
+    line-height: 60px;
+    text-align: center;
+    @include font($size-h5, $text-color-light);
+  }
+}
+.oil-card {
+  background-color: $white;
+  border-radius: 10px;
+  margin-top: 20px;
+
+  &-item {
+    position: relative;
+    padding-left: 60px;
+    padding-right: 20px;
+    // flex 函数有重名, theme 引入覆盖taro-ui
+    @include flex(space-between, center);
+
+    &.with-user {
+      @include flex(flex-start, center);
+    }
+
+    &.card-header {
+      padding-top: 20px;
+      padding-bottom: 30px;
+      position: relative;
+      .icon {
+        @include wh(32px, 32px);
+        border-radius: 50%;
+        position: absolute;
+        left: 20px;
+        top: 33px;
+      }
+    }
+
+    &.card-company {
+      padding-top: 10px;
+      padding-bottom: 30px;
+    }
+
+    &__title {
+      @include font(36px, $text-color, 500);
+      flex: 1;
+      &.with-user {
+        //@include flex(flex-start, center);
+      }
+    }
+    &__text {
+      @include font($size-h4, $text-color-light);
+    }
+    .unit {
+      line-height: 30px;
+      @include font(28px, $color-orange,500);
+    }
+    .amount {
+      @include font(40px, $color-orange, 600);
+      // word-break: break-all;
+      line-height: 40px;
+    }
+
+    &__user-group {
+      margin-left: 8px;
+      display: inline-block;
+      @include wh(26px, 22px);
+    }
+
+    &__balance {
+      position: relative;
+      text-align: right;
+      max-width: 50%;
+      min-width: 30%;
+      .balance-tip {
+        position: absolute;
+        right: 0;
+        bottom: -36px;
+        width: 100%;
+        text-align: right;
+      }
+    }
+
+    &__text-small {
+      @include font($size-h5, $text-color-light);
+    }
+
+    &.card__footer {
+      margin: 0 20px;
+      padding: 20px 0 20px 40px;
+      @include one-border(top, $border-color-grey);
+
+      .primary-btn-small {
+        line-height: 1;
+        padding: 10px 24px;
+        @include font($size-h5, $white);
+        @include button-color($primary-color);
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+export const USER_TOKEN = "USER_TOKEN";
+export const DRIVER_INFO = "DRIVER_INFO";
+export const MINI_VERSION = "miniversion";
+export const WX_INFO = "WX_INFO";
+export const DEMO_NAME = "add";
+export const LOGIN = "login";
+export const OIL_DETAIL = "oil_detail";
+export const UNBIND_DRIVER = "unbind_driver";
+export const BIND_DRIVER_LIST = "bind_driver_list";
+export const OIL_CARD_STATUS_SET = "oil_card_status_set";
+export const ADD_DRIVER = "add_driver";
+export const DRIVER_LIST = "driver_list";
+export const ACCOUNT = "account";
+export const USER_INFO = "user_info";
+export const BUSSINESS_TYPE = "bussiness_type";
+export const CAR_LIST = "car_list";
+export const OPEN_CARD = "open_Card";
+export const SHARE_ACCOUNT = "share_account";
+export const GET_AUTH_INFO = "get_auth_info";
+export const CREATE_CAR = "create_car";
+
